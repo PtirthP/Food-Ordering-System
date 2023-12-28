@@ -1,0 +1,92 @@
+﻿<Window x:Class="Lab_Wawa_App_TirthPatel.Toppings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_Wawa_App_TirthPatel"
+        mc:Ignorable="d"
+        Title="Toppings" Height="450" Width="800" Background="#FFE2E2CD">
+    <Grid>
+
+        <Button x:Name="btnPrevious" HorizontalAlignment="Left" Margin="6,319,0,0" VerticalAlignment="Top" Width="72" Click="btnPrevious_Click">
+            <StackPanel>
+                <Image x:Name="btnPrevious1" Source="back.png " Height="54" Width="66" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+
+        <CheckBox x:Name="cbCucumber" HorizontalAlignment="Left" Margin="259,72,0,0" VerticalAlignment="Top" Checked="cbCucumber_Checked" Unchecked="cbCucumber_Unchecked">
+            <StackPanel x:Name="spCucumber">
+                <Image Source="cucumber.png" Stretch="Fill" Height="119" Width="149"/>
+                <TextBlock Text="cucumber" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </CheckBox>
+
+        <CheckBox x:Name="cbJalapeno" HorizontalAlignment="Left" Margin="439,75,0,0" VerticalAlignment="Top" Height="142" Width="168" Checked="cbJalapeno_Checked" Unchecked="cbJalapeno_Unchecked">
+            <StackPanel x:Name="spJalapeno">
+                <Image Source="jalapeno.png" Stretch="Fill" Height="119" Width="149"/>
+                <TextBlock Text="jalapeno" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </CheckBox>
+
+        <CheckBox x:Name="cbLettuce" HorizontalAlignment="Left" Margin="83,223,0,0" VerticalAlignment="Top" Height="158" Checked="cbLettuce_Checked" Unchecked="cbLettuce_Unchecked">
+            <StackPanel x:Name="spLettuce" Height="148">
+                <Image Source="lettuce.png" Height="125" Width="149"/>
+                <TextBlock Text="lettuce" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </CheckBox>
+
+        <CheckBox x:Name="cbOnion" HorizontalAlignment="Left" Margin="260,223,0,0" VerticalAlignment="Top" Checked="cbOnion_Checked" Unchecked="cbOnion_Unchecked">
+            <StackPanel x:Name="spOnion" Height="144">
+                <Image Source="Onion.png" Stretch="Fill" Height="119" Width="149"/>
+                <TextBlock Text="Onion" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </CheckBox>
+
+        <CheckBox x:Name="cbTomatoes" HorizontalAlignment="Left" Margin="439,222,0,0" VerticalAlignment="Top" Unchecked="cbTomatoes_Unchecked" Checked="cbTomatoes_Checked">
+            <StackPanel x:Name="spTomatoes" >
+                <Image Source="tomatos.png" Stretch="Fill" Height="119" Width="149"/>
+                <TextBlock Text="Tomatoes" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </CheckBox>
+
+
+
+
+
+
+
+
+        <Label x:Name="lblHeading" Content="Toppings" HorizontalAlignment="Left" Margin="194,10,0,0" VerticalAlignment="Top" Width="300" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="wawa.png" Margin="10,10,0,0"/>
+
+        <Image x:Name="imgOrder" Source="scriptroll.png" Stretch="Fill" Margin="576,-61,-24,-31" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.096"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.443"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <ListBox x:Name="lbOrder"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="617,76,18,40">
+            <ListBox.BorderBrush>
+                <ImageBrush/>
+            </ListBox.BorderBrush>
+            <ListBox.Background>
+                <ImageBrush/>
+            </ListBox.Background>
+        </ListBox>
+        <Label x:Name="lblOrder" Content="Your Order" HorizontalAlignment="Left" Margin="664,45,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <CheckBox x:Name="cbCorn" HorizontalAlignment="Left" Margin="82,70,0,0" VerticalAlignment="Top" Checked="cbCorn_Checked" Unchecked="cbCorn_Unchecked">
+            <StackPanel x:Name="spCorn">
+                <Image Source="Corn.png" Stretch="Fill" Height="119" Width="149"/>
+                <TextBlock Text="Corn" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </CheckBox>
+        <Button x:Name="btnAddToOrder" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="49" Width="189" Margin="379,368,0,0" Click="btnAddToOrder_Click">
+            <Image Source="AddToOrder.png" Height="49" Stretch="Fill"/>
+        </Button>
+    </Grid>
+</Window>

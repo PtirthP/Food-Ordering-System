@@ -1,0 +1,74 @@
+﻿<Window x:Class="Lab_Wawa_App_TirthPatel.HoagiesAndSandwiches"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_Wawa_App_TirthPatel"
+        mc:Ignorable="d"
+        Title="HoagiesAndSandwiches" Height="450" Width="800"  WindowStartupLocation="Manual" Top="300" Left="600"  Background="#FFE2E2CD" ResizeMode="NoResize">
+
+    <Grid>
+
+
+
+        <Button x:Name="btnPrevious" HorizontalAlignment="Left" Margin="60,343,0,0" VerticalAlignment="Top" Width="72" Click="btnPrevious_Click" >
+            <StackPanel>
+                <Image x:Name="btnPrevious1" Source="back.png " Height="54" Width="66" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+
+
+        <Button x:Name="btnPepperoni" HorizontalAlignment="Left" Margin="51,139,0,0" VerticalAlignment="Top" Height="143" Width="167" Background="Transparent" Click="btnPepperoni_Click">
+            <StackPanel>
+                <Image Source="pepperoni.png" Height="119" Width="149" Stretch="Fill"/>
+                <TextBlock Text="Pepperoni - $5.99" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="btnTurkey" HorizontalAlignment="Left" Margin="233,138,0,0" VerticalAlignment="Top" Height="143" Width="168" Background="Transparent" Click="btnTurkey_Click">
+            <StackPanel>
+                <Image Source="turkey.png" Height="119" Width="149" Stretch="Fill"/>
+                <TextBlock Text="Turkey - $5.99" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="btnVeggie" HorizontalAlignment="Left" Margin="419,140,0,0" VerticalAlignment="Top" Height="143" Width="168" Background="Transparent" Click="btnVeggie_Click">
+            <StackPanel>
+                <Image Source="veggie.png" Height="115" Width="149" Stretch="Fill"/>
+                <TextBlock Text="Veggie - $4.99" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+
+
+
+
+
+
+
+
+        <Label x:Name="lblHeading" Content="Hoagies and Sandwiches" HorizontalAlignment="Left" Margin="167,21,0,0" VerticalAlignment="Top" Width="300" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="wawa.png" Margin="10,10,0,0"/>
+
+        <Image x:Name="imgOrder" Source="scriptroll.png" Stretch="Fill" Margin="559,-61,-24,-31" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.096"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.443"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <TextBox x:Name="txtOrder"  VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Margin="604,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="186" Height="325" IsReadOnly="True">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+
+        <Button x:Name="btnCheckout" Content="Checkout" HorizontalAlignment="Left" Margin="449,362,0,0" VerticalAlignment="Top" Height="32" Width="94" Click="btnCheckout_Click"/>
+
+
+        <Label x:Name="lblOrder" Content="Your Order" HorizontalAlignment="Left" Margin="664,45,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+    </Grid>
+</Window>
