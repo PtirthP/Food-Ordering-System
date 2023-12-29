@@ -1,4 +1,4 @@
-# Wawa Touch Screen Program
+# Wawa Food Ordering Screen Clone
 
 🥖🥤 Welcome to my Wawa Touch Screen program, created as part of the IST331 course at Penn State-Abington in Fall 2022! 🥪☕
 
@@ -9,8 +9,8 @@
 - Illustrated screen connections, navigation paths, and control placements.
 - Demonstrated screen interactions and highlighted all controls.
 
-### 2. Visual Studio 2019 C# Project
-- Complete C# project in Visual Studio 2019.
+### 2. Visual Studio 2022 C# Project
+- Complete C# project in Visual Studio 2022.
 - All necessary .CS and .H files are included for seamless execution.
 - Compressed the entire project for easy sharing.
 - Ensured the compressed file includes an up-to-date executable (.exe).
@@ -58,4 +58,9 @@
 2. Open the project in Visual Studio 2019.
 3. Run the executable file to experience the Wawa Touch Screen program.
 
-Feel free to explore, order your favorite Wawa items, and enjoy the convenience of this touch screen ordering system! 🛒👩‍🍳
+### The .exe file is located under:
+```bash
+Lab_Wawa_App-TirthPatel\bin\Debug\Lab_Wawa_App-TirthPatel.exe
+```
+
+Feel free to explore, order your favorite Wawa items, and enjoy the convenience of this touch-screen ordering system clone! 🛒👩‍🍳
