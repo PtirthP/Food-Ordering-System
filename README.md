@@ -60,7 +60,7 @@
 
 ### The .exe file is located under:
 ```bash
-Lab_Wawa_App-TirthPatel\bin\Debug\Lab_Wawa_App-TirthPatel.exe
+Lab_Wawa_App-TirthPatel/bin/Debug/Lab_Wawa_App-TirthPatel.exe
 ```
 
 Feel free to explore, order your favorite Wawa items, and enjoy the convenience of this touch-screen ordering system clone! 🛒👩‍🍳
